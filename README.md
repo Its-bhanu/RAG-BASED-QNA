@@ -35,8 +35,8 @@ A modern web application that lets you upload PDF documents and chat with them u
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/pdf-rag-chat.git
-cd pdf-rag-chat
+git clone https://github.com/Its-bhanu/RAG-BASED-QNA.git
+
 ```
 
 ### 2. Start Vector DB & Queue
@@ -53,7 +53,7 @@ This will start Qdrant (vector database) and Valkey (Redis-compatible queue).
 cd server
 npm install
 # Add your API keys to .env
-node worker.js   # Start the PDF processing worker
+npm run dev:worker   # Start the PDF processing worker
 node index.js    # Start the Express server
 ```
 
@@ -129,3 +129,4 @@ MIT
 - [Qdrant](https://qdrant.tech/)
 - [Google Gemini](https://ai.google.dev/)
 -
+
